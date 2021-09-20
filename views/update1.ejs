@@ -1,0 +1,33 @@
+<%- include ('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Update Employee</h1>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /add route -->
+           <form action="/update1" method="POST">
+           <div class="form-group">
+              <label for="name">Employee Name</label>
+              <input type="text" class="form-control" name="empname" value=<%=empname%> >
+            </div>
+              <label for="email">Employee Email</label>
+              <input type="email" class="form-control" name="username" value=<%=empemail%>>
+              <label for="empcode">Employee Code</label>
+              <input type="text" class="form-control" name="empcode" value=<%=empcode%>>
+            
+             <div class="form-group">
+              <label for="password">Employee Password</label>
+              <input type="password" class="form-control" name="password" value=<%=emppassword%> >
+            </div><br>
+            <button type="submit" class="btn btn-dark">Update Employee</button>
+          </form></div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+<%- include ('partials/footer') %>

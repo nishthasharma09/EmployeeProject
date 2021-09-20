@@ -1,0 +1,33 @@
+<%- include ('partials/header') %>
+
+<div class="container mt-5">
+  <h1>Add Employee</h1>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <!-- Makes POST request to /add route -->
+           <form action="/add" method="POST">
+           <div class="form-group">
+              <label for="name">Employee Name</label>
+              <input type="text" class="form-control" name="empname">
+            </div>
+              <label for="email">Employee Email</label>
+              <input type="email" class="form-control" name="username">
+              <label for="empcode">Employee Code</label>
+              <input type="text" class="form-control" name="empcode">
+            
+             <div class="form-group">
+              <label for="password">Employee Password</label>
+              <input type="password" class="form-control" name="password">
+            </div><br>
+            <button type="submit" class="btn btn-dark">Add Employee</button>
+          </form></div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+<%- include ('partials/footer') %>

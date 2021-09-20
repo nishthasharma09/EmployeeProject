@@ -1,0 +1,50 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background: #EEEEEE;
+	position: relative;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+    position: relative;
+}
+.right-side{
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+}
+.container-black{
+	background: black;
+}
+.outer{
+	background: url('images/back.jpeg');
+	padding-top:  13.5%;
+	padding-bottom: 13%;
+}
+.inner{
+	color: white;
+	text-align: center;
+}
+.inner h1{
+	font-family: 'Bonheur Royale', cursive;
+	font-family: 'Ephesis', cursive;
+	font-weight: 200;
+	letter-spacing: 5px;
+	font-size: 6rem;
+}
+.circle{
+	font-weight: 900;
+	border-radius: 30px;
+	margin: 30px 5px;
+}
+
+.circle:hover{
+	background: black;
+	color: white;
+}
